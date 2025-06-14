@@ -11,4 +11,5 @@ for col in columns:
     dummies = dummies.drop(columns=[reference])
     effect = pd.concat([dummies, effect], axis=1)
 
-print(effect)
+if __name__ == '__main__':
+    print(effect)
